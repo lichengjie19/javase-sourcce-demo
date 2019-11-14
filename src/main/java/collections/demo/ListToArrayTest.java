@@ -1,9 +1,13 @@
-package other;
+package collections.demo;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 测试List->array, 三种情况
+ *   array.length < list.size
+ *   array.length = list.size
+ *   array.length > list.size
  * @author licjd
  * @date 2019/11/13 9:46
  */
