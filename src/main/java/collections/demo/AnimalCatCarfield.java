@@ -35,7 +35,7 @@ public class AnimalCatCarfield {
 
         // 第2段: 测试赋值操作
         // 下行编译出错, 只能赋值Cat或Cat子类的集合
-        List<? extends Cat> extendsCatFromAnimal = animals;
+//        List<? extends Cat> extendsCatFromAnimal = animals;
         List<? super Cat> superCatFromAnimal = animals;
 
         List<? extends Cat> extendsCatFromCat = cats;
@@ -43,16 +43,16 @@ public class AnimalCatCarfield {
 
         List<? extends Cat> extendsCatFromGarfield = garfields;
         // 下行编译出错,只能赋值Cat或Cat父类的集合
-        List<? super Cat> superCatFromGarfield = garfields;
+//        List<? super Cat> superCatFromGarfield = garfields;
 
         // 第3段: 测试add方法
         // 下面三行中所有的<? extends T> 都无法进行add操作, 编译均出错
-        extendsCatFromCat.add(new Animal());
-        extendsCatFromCat.add(new Cat());
-        extendsCatFromCat.add(new Garfield());
+//        extendsCatFromCat.add(new Animal());
+//        extendsCatFromCat.add(new Cat());
+//        extendsCatFromCat.add(new Garfield());
 
         // 下行编译出错, 只能添加Cat或Cat子类的集合
-        superCatFromCat.add(new Animal());
+//        superCatFromCat.add(new Animal());
         superCatFromCat.add(new Cat());
         superCatFromCat.add(new Garfield());
 
@@ -63,7 +63,7 @@ public class AnimalCatCarfield {
         Object catExtends2 = extendsCatFromCat.get(0);
         Cat catExtends1 = extendsCatFromCat.get(0);
         // 下行编译出错, 虽然Cat集合从Grafield赋值而来, 但类型擦除后, 是不知道的
-        Garfield garfield1 = extendsCatFromGarfield.get(0);
+//        Garfield garfield1 = extendsCatFromGarfield.get(0);
 
     }
 
