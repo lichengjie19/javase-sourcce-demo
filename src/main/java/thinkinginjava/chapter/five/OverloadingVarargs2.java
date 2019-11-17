@@ -1,4 +1,4 @@
-package thinkingiInJava.chapter.five;
+package thinkinginjava.chapter.five;
 
 /**
  * Java SE5 特性: 可变参数
