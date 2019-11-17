@@ -19,6 +19,6 @@ public class OverloadingVarargs2 {
     public static void main(String[] args) {
         f(1, 'a');
         // 下行编译出错
-        f('a', 'b');
+//        f('a', 'b');
     }
 }
