@@ -15,6 +15,7 @@ public class ConstructorsExtendsDemo {
 }
 
 class A {
+    B b2 = new B("B()");
     A() {
         System.out.println("A()");
     }
@@ -27,7 +28,7 @@ class B {
 }
 
 class C extends A{
-    static B b1 = new B("static B()");
+//    static B b1 = new B("static B()");
     B b2 = new B("B()");
 //    C(){
 //        System.out.println("C()");
