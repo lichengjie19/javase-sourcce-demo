@@ -1,5 +1,8 @@
 package lang.demo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author licjd
  * @date 2019/11/5 21:28
@@ -27,6 +30,11 @@ public class IntegerDemo {
         System.out.println(q<<2);
         r = i - ((q << 6) + (q << 5) + (q << 2));
 
+        // parseInt
+        System.out.println(Integer.parseInt("123"));
+
+        Map<String, String> map = new HashMap<>();
+        System.out.println(map.size());
 
     }
 
