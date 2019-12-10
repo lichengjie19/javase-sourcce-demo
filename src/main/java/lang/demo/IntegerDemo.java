@@ -33,13 +33,18 @@ public class IntegerDemo {
         // parseInt
         System.out.println(Integer.parseInt("123"));
 
-        Map<String, String> map = new HashMap<>();
-        System.out.println(map.size());
+//        System.out.println("qqqqqqqqqqqqqqqqq");
+//        int num = Integer.parseInt("ffffffff", 16);
+        System.out.println(Integer.parseInt("100", 16));
+
+        System.out.println(Integer.getInteger("java.vendor"));
+
+        // todo
+        System.out.println(Integer.decode("0xfffffff"));
+        System.out.println(0xfffffff);
+
 
     }
 
-    public void a() {
-        return;
-    }
 
 }
